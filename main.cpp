@@ -109,7 +109,7 @@ void *request_handler(void *arg)
     }
     cout << "response successful,req line :: " << req_line << "ptr::" << ptr << endl;
     char htmlFileName[20] = "test.html";
-    strcpy(method, strtok(req_line, " /")); //请求方式
+    strcpy(method, strtok(req_line, " /")); //请求方式   
     // strcpy(file_name, strtok(htmlFileName, " /"));  //请求的文件名
     strcpy(file_name, htmlFileName);  //请求的文件名
     strcpy(ct, content_type(file_name));    //请求内容类型
